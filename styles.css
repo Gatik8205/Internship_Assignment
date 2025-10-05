@@ -40,8 +40,9 @@ header {
   font-weight: 700;
   font-size: 1.2rem;
 }
-.logo small {
+.tagline {
   font-size: 0.75rem;
+  font-weight: 400;
   color: #666;
 }
 nav ul {
@@ -90,7 +91,7 @@ nav a {
   margin-bottom: 20px;
   line-height: 1.2;
 }
-.hero-text .highlight-text {
+.hero-text .highlight {
   color: #ff004c;
   font-weight: 700;
   text-decoration: underline;
@@ -114,6 +115,9 @@ nav a {
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.btn-secondary:hover {
+  background: #ffe6ed;
+}
 .btn-tertiary {
   background: #ff004c;
   color: #fff;
@@ -122,6 +126,9 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   box-shadow: 0 4px 12px rgba(255,0,76,0.3);
+}
+.btn-tertiary:hover {
+  background: #e00044;
 }
 
 /* Hero Image */
