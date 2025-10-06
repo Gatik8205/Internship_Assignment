@@ -11,14 +11,14 @@
 </head>
 <body>
   <!-- Navbar -->
-  <header>
+  <header class="header">
     <div class="container nav">
       <div class="logo">
         <img src="assets/logo.png" alt="Company Logo" width="40">
         <h3>COMPANY <span class="tagline">business tagline</span></h3>
       </div>
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <ul class="nav-links">
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Our Services</a></li>
@@ -27,18 +27,21 @@
         </ul>
       </nav>
       <a href="#" class="btn-primary">Get A Quote</a>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>
-          Your Resume <br>
-          <span class="highlight">Deserves A Yes</span> <br>
-          Let’s Make It Happen
-        </h1>
+        <h1>Your Resume <span class="highlight">Deserves A Yes</span><br>Let’s Make It Happen</h1>
         <p>
           If your resume isn’t getting responses, it’s time for an upgrade. Get an ATS-optimized resume crafted by HR experts to help you land more interviews. Our resumes are designed to get your foot in the door and place your name at the top of the shortlist.
         </p>
@@ -48,49 +51,61 @@
         </div>
       </div>
       <div class="hero-img">
-        <img src="assets/student.png" alt="Student" />
+        <img src="assets/student.png" alt="Student">
         <div class="info-card rating">
           <span class="highlight">4.9 ★★★★★</span><br>Instructor Rating
         </div>
         <div class="info-card created">
-          <span class="highlight">260+</span><br>Online Resume Created
+          <span class="highlight">260+</span><br>Online Resumes Created
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Features -->
+  <!-- Features Section -->
   <section class="features">
     <div class="container">
       <button class="section-btn">What You Get</button>
-      <h2>You’re Not Just Another Applicant And Your Resume Shouldn’t Look Like One</h2>
+      <h2>You’re Not Just Another Applicant — And Your Resume Shouldn’t Look Like One</h2>
       <div class="feature-grid">
-        
+
         <div class="feature-card">
-          <img src="assets/resume.png" alt="Resume Icon" />
+          <img src="assets/resume.png" alt="Resume Icon">
           <h3>A Resume That Passes ATS Filters</h3>
           <p>Get a professionally written, keyword-optimized resume that lands in recruiter inboxes — not rejection piles.</p>
         </div>
-        
+
         <div class="feature-card">
-          <img src="assets/cover_letter.png" alt="Cover Letter Icon" />
+          <img src="assets/cover_letter.png" alt="Cover Letter Icon">
           <h3>A Cover Letter That Gets Read</h3>
           <p>Stand out with a cover letter that speaks directly to the role and reflects your strengths.</p>
         </div>
-        
+
         <div class="feature-card">
-          <img src="assets/linkedin.png" alt="LinkedIn Icon" />
+          <img src="assets/linkedin.png" alt="LinkedIn Icon">
           <h3>A LinkedIn Profile That Works For You</h3>
           <p>Attract the right eyes, start conversations, and show up in recruiter searches.</p>
         </div>
-        
+
         <div class="feature-card">
-          <img src="assets/interview.png" alt="Interview Icon" />
+          <img src="assets/interview.png" alt="Interview Icon">
           <h3>Interview Confidence</h3>
           <p>Interview preparation with real HR professionals so you speak clearly, confidently, and convincingly.</p>
         </div>
+
       </div>
     </div>
   </section>
+
+  <script>
+    // Mobile Menu Toggle Script
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
